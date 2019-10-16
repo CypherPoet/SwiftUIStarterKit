@@ -15,9 +15,11 @@ let package = Package(
             name: "CypherPoetSwiftUIKit",
             targets: [
                 "PreviewUtils",
+                "ViewModifiers",
             ]
         ),
-        .library(name: "PreviewUtils", targets: ["PreviewUtils"])
+        .library(name: "PreviewUtils", targets: ["PreviewUtils"]),
+        .library(name: "ViewModifiers", targets: ["ViewModifiers"]),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -30,6 +32,11 @@ let package = Package(
             name: "PreviewUtils",
             dependencies: [],
             path: "Sources/PreviewUtils/"
+        ),
+        .target(
+            name: "ViewModifiers",
+            dependencies: [],
+            path: "Sources/ViewModifiers/"
         )
     ]
 )
