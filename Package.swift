@@ -14,10 +14,12 @@ let package = Package(
         .library(
             name: "CypherPoetSwiftUIKit",
             targets: [
+                "ImageUtils",
                 "PreviewUtils",
                 "ViewModifiers",
             ]
         ),
+        .library(name: "ImageUtils", targets: ["ImageUtils"]),
         .library(name: "PreviewUtils", targets: ["PreviewUtils"]),
         .library(name: "ViewModifiers", targets: ["ViewModifiers"]),
     ],
@@ -28,6 +30,10 @@ let package = Package(
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
         // Targets can depend on other targets in this package, and on products in packages which this package depends on.
+        .target(
+            name: "ImageUtils",
+            dependencies: []
+        ),
         .target(
             name: "PreviewUtils",
             dependencies: []
