@@ -14,14 +14,14 @@ let package = Package(
         .library(
             name: "CypherPoetSwiftUIKit",
             targets: [
-                "ImageUtils",
-                "PreviewUtils",
-                "ViewModifiers",
+                "CypherPoetSwiftUIKitImageUtils",
+                "CypherPoetSwiftUIKitPreviewUtils",
+                "CypherPoetSwiftUIKitViewModifiers",
             ]
         ),
-        .library(name: "ImageUtils", targets: ["ImageUtils"]),
-        .library(name: "PreviewUtils", targets: ["PreviewUtils"]),
-        .library(name: "ViewModifiers", targets: ["ViewModifiers"]),
+        .library(name: "CypherPoetSwiftUIKitImageUtils", targets: ["CypherPoetSwiftUIKitImageUtils"]),
+        .library(name: "CypherPoetSwiftUIKitPreviewUtils", targets: ["CypherPoetSwiftUIKitPreviewUtils"]),
+        .library(name: "CypherPoetSwiftUIKitViewModifiers", targets: ["CypherPoetSwiftUIKitViewModifiers"]),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -31,16 +31,19 @@ let package = Package(
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
         // Targets can depend on other targets in this package, and on products in packages which this package depends on.
         .target(
-            name: "ImageUtils",
-            dependencies: []
+            name: "CypherPoetSwiftUIKitImageUtils",
+            dependencies: [],
+            path: "Sources/ImageUtils"
         ),
         .target(
-            name: "PreviewUtils",
-            dependencies: []
+            name: "CypherPoetSwiftUIKitPreviewUtils",
+            dependencies: [],
+            path: "Sources/PreviewUtils"
         ),
         .target(
-            name: "ViewModifiers",
-            dependencies: []
+            name: "CypherPoetSwiftUIKitViewModifiers",
+            dependencies: [],
+            path: "Sources/ViewModifiers"
         )
     ]
 )
