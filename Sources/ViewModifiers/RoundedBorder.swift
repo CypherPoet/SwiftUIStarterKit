@@ -15,7 +15,7 @@ public struct RoundedBorder<BorderStyle> where BorderStyle: ShapeStyle {
     public let cornerRadius: CGFloat
     
     
-    init(
+    public init(
         _ borderContent: BorderStyle,
         width: CGFloat = 1,
         cornerRadius: CGFloat = 0
