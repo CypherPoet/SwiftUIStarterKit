@@ -40,11 +40,6 @@ struct RefreshableScrollView<Content: View>: View {
     }
 }
 
-// MARK: - Computeds
-extension RefreshableScrollView {
-    
-}
-
 
 // MARK: - Body
 extension RefreshableScrollView {
@@ -63,8 +58,9 @@ extension RefreshableScrollView {
                         }
                     }
                     
+                    // 📝 TODO: Ideally, this view would be configurable
                     RefreshIndicatorView(
-                        scrollTolerance: self.scrollThreshold,
+                        scrollThreshold: self.scrollThreshold,
                         isRefreshing: self.isRefreshing,
                         isFrozen: self.isFrozen,
                         arrowRotation: self.arrowRotation

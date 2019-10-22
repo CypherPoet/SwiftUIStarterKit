@@ -14,16 +14,16 @@ let package = Package(
         .library(
             name: "CypherPoetSwiftUIKit",
             targets: [
-                "CypherPoetSwiftUIKitImageUtils",
-                "CypherPoetSwiftUIKitPreviewUtils",
-                "CypherPoetSwiftUIKitViewBuilders",
-                "CypherPoetSwiftUIKitViewModifiers",
+                "CypherPoetSwiftUIKit.ImageUtils",
+                "CypherPoetSwiftUIKit.PreviewUtils",
+                "CypherPoetSwiftUIKit.RefreshableScrollView",
+                "CypherPoetSwiftUIKit.ViewModifiers",
             ]
         ),
-        .library(name: "CypherPoetSwiftUIKitImageUtils", targets: ["CypherPoetSwiftUIKitImageUtils"]),
-        .library(name: "CypherPoetSwiftUIKitPreviewUtils", targets: ["CypherPoetSwiftUIKitPreviewUtils"]),
-        .library(name: "CypherPoetSwiftUIKitViewBuilders", targets: ["CypherPoetSwiftUIKitViewBuilders"]),
-        .library(name: "CypherPoetSwiftUIKitViewModifiers", targets: ["CypherPoetSwiftUIKitViewModifiers"]),
+        .library(name: "CypherPoetSwiftUIKit.ImageUtils", targets: ["CypherPoetSwiftUIKit.ImageUtils"]),
+        .library(name: "CypherPoetSwiftUIKit.PreviewUtils", targets: ["CypherPoetSwiftUIKit.PreviewUtils"]),
+        .library(name: "CypherPoetSwiftUIKit.RefreshableScrollView", targets: ["CypherPoetSwiftUIKit.RefreshableScrollView"]),
+        .library(name: "CypherPoetSwiftUIKit.ViewModifiers", targets: ["CypherPoetSwiftUIKit.ViewModifiers"]),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -33,22 +33,22 @@ let package = Package(
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
         // Targets can depend on other targets in this package, and on products in packages which this package depends on.
         .target(
-            name: "CypherPoetSwiftUIKitImageUtils",
+            name: "CypherPoetSwiftUIKit.ImageUtils",
             dependencies: [],
             path: "Sources/ImageUtils"
         ),
         .target(
-            name: "CypherPoetSwiftUIKitPreviewUtils",
+            name: "CypherPoetSwiftUIKit.PreviewUtils",
             dependencies: [],
             path: "Sources/PreviewUtils"
         ),
         .target(
-            name: "CypherPoetSwiftUIKitViewBuilders",
+            name: "CypherPoetSwiftUIKit.RefreshableScrollView",
             dependencies: [],
-            path: "Sources/ViewBuilders"
+            path: "Sources/RefreshableScrollView"
         ),
         .target(
-            name: "CypherPoetSwiftUIKitViewModifiers",
+            name: "CypherPoetSwiftUIKit.ViewModifiers",
             dependencies: [],
             path: "Sources/ViewModifiers"
         ),

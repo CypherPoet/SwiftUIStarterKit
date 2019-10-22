@@ -1,6 +1,5 @@
 import SwiftUI
 
-
 /// An animated arrow will indicate how close we are
 /// to the refresh triggering point.
 ///
@@ -10,7 +9,7 @@ struct RefreshIndicatorView: View {
     
     /// The maximum scroll distance, or "threshold", that can be moved before the
     /// view will refresh
-    var scrollTolerance: CGFloat
+    var scrollThreshold: CGFloat
     
     var isRefreshing: Bool
     var isFrozen: Bool
@@ -29,18 +28,18 @@ extension RefreshIndicatorView {
                     ActivityIndicator()
                     Spacer()
                 }
-                .frame(height: scrollTolerance)
+                .frame(height: scrollThreshold)
                 .fixedSize()
-                .offset(y: (isRefreshing && isFrozen) ? 0.0 : -scrollTolerance)
+                .offset(y: (isRefreshing && isFrozen) ? 0.0 : -scrollThreshold)
             } else {
                 Image(systemName: "arrow.down")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
-                    .frame(width: scrollTolerance * 0.25, height: scrollTolerance * 0.25)
+                    .frame(width: scrollThreshold * 0.25, height: scrollThreshold * 0.25)
                     .fixedSize()
-                    .padding(scrollTolerance * 0.375)
+                    .padding(scrollThreshold * 0.375)
                     .rotationEffect(arrowRotation)
-                    .offset(y: (isRefreshing && isFrozen) ? 0.0 : -scrollTolerance)
+                    .offset(y: (isRefreshing && isFrozen) ? 0.0 : -scrollThreshold)
             }
         }
     }
@@ -52,7 +51,7 @@ struct RefreshIndicatorView_Previews: PreviewProvider {
 
     static var previews: some View {
         RefreshIndicatorView(
-            scrollTolerance: 80,
+            scrollThreshold: 80,
             isRefreshing: false,
             isFrozen: false,
             arrowRotation: .zero
