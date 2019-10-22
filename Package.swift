@@ -16,11 +16,13 @@ let package = Package(
             targets: [
                 "CypherPoetSwiftUIKitImageUtils",
                 "CypherPoetSwiftUIKitPreviewUtils",
+                "CypherPoetSwiftUIKitViewBuilders",
                 "CypherPoetSwiftUIKitViewModifiers",
             ]
         ),
         .library(name: "CypherPoetSwiftUIKitImageUtils", targets: ["CypherPoetSwiftUIKitImageUtils"]),
         .library(name: "CypherPoetSwiftUIKitPreviewUtils", targets: ["CypherPoetSwiftUIKitPreviewUtils"]),
+        .library(name: "CypherPoetSwiftUIKitViewBuilders", targets: ["CypherPoetSwiftUIKitViewBuilders"]),
         .library(name: "CypherPoetSwiftUIKitViewModifiers", targets: ["CypherPoetSwiftUIKitViewModifiers"]),
     ],
     dependencies: [
@@ -41,9 +43,14 @@ let package = Package(
             path: "Sources/PreviewUtils"
         ),
         .target(
+            name: "CypherPoetSwiftUIKitViewBuilders",
+            dependencies: [],
+            path: "Sources/ViewBuilders"
+        ),
+        .target(
             name: "CypherPoetSwiftUIKitViewModifiers",
             dependencies: [],
             path: "Sources/ViewModifiers"
-        )
+        ),
     ]
 )
