@@ -17,12 +17,14 @@ let package = Package(
                 "CypherPoetSwiftUIKit.ImageUtils",
                 "CypherPoetSwiftUIKit.PreviewUtils",
                 "CypherPoetSwiftUIKit.RefreshableScrollView",
+                "CypherPoetSwiftUIKit.ShapeUtils",
                 "CypherPoetSwiftUIKit.ViewModifiers",
             ]
         ),
         .library(name: "CypherPoetSwiftUIKit.ImageUtils", targets: ["CypherPoetSwiftUIKit.ImageUtils"]),
         .library(name: "CypherPoetSwiftUIKit.PreviewUtils", targets: ["CypherPoetSwiftUIKit.PreviewUtils"]),
         .library(name: "CypherPoetSwiftUIKit.RefreshableScrollView", targets: ["CypherPoetSwiftUIKit.RefreshableScrollView"]),
+        .library(name: "CypherPoetSwiftUIKit.ShapeUtils", targets: ["CypherPoetSwiftUIKit.ShapeUtils"]),
         .library(name: "CypherPoetSwiftUIKit.ViewModifiers", targets: ["CypherPoetSwiftUIKit.ViewModifiers"]),
     ],
     dependencies: [
@@ -48,9 +50,15 @@ let package = Package(
             path: "Sources/RefreshableScrollView"
         ),
         .target(
+            name: "CypherPoetSwiftUIKit.ShapeUtils",
+            dependencies: [],
+            path: "Sources/ShapeUtils"
+        ),
+        .target(
             name: "CypherPoetSwiftUIKit.ViewModifiers",
             dependencies: [],
             path: "Sources/ViewModifiers"
         ),
     ]
 )
+
