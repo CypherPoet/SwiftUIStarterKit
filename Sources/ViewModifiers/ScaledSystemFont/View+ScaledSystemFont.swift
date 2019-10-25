@@ -7,9 +7,7 @@ extension View {
     
     public func scaledSystemFont(
         size: CGFloat,
-        weight: Font.Weight = .regular,
-        design: Font.Design = .default
     ) -> some View {
-        self.modifier(ScaledSystemFont(size: size, weight: weight, design: design))
+        self.modifier(ScaledSystemFont(size: size))
     }
 }
