@@ -10,9 +10,22 @@ import SwiftUI
 
 
 public struct CustomFilledButtonStyle: ButtonStyle {
-    public var fillColor: Color = .accentColor
-    public var foregroundColor: Color = .white
-    public var foregroundColorWhenPressed: Color = .gray
+    public var fillColor: Color
+    public var foregroundColor: Color
+    public var foregroundColorWhenPressed: Color
+    
+    
+    public init(
+        fillColor: Color = .accentColor,
+        foregroundColor: Color = .white,
+        foregroundColorWhenPressed: Color = .gray
+        
+    ) {
+        self.fillColor = fillColor
+        self.foregroundColor = foregroundColor
+        self.foregroundColorWhenPressed = foregroundColorWhenPressed
+    }
+    
     
     
     public func makeBody(configuration: Configuration) -> some View {
