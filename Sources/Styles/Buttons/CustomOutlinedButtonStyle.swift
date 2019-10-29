@@ -16,7 +16,7 @@ public struct CustomOutlinedButtonStyle: ButtonStyle {
     
     public init(
         foregroundColor: Color = .accentColor,
-        borderColor: Color = .accentColor,
+        borderColor: Color = .accentColor
     ) {
         self.foregroundColor = foregroundColor
         self.borderColor = borderColor
