@@ -10,33 +10,37 @@ import SwiftUI
 
 
 public struct CustomFilledButtonStyle: ButtonStyle {
-    public var width: CGFloat
-    public var height: CGFloat
+    public var minWidth: CGFloat?
+    public var minHeight: CGFloat?
     public var fillColor: Color
     public var foregroundColor: Color
     public var foregroundColorWhenPressed: Color
     
     
     public init(
-        width: CGFloat = 44,
-        height: CGFloat = 44,
+        idealWidth: CGFloat? = 44,
+        idealHeight: CGFloat? = 44,
         fillColor: Color = .accentColor,
         foregroundColor: Color = .white,
         foregroundColorWhenPressed: Color = .gray
         
     ) {
-        self.width = width
-        self.height = height
+        self.minWidth = idealWidth
+        self.minHeight = idealHeight
         self.fillColor = fillColor
         self.foregroundColor = foregroundColor
         self.foregroundColorWhenPressed = foregroundColorWhenPressed
     }
     
-    
-    
+}
+ 
+
+// MARK: - makeBody
+extension CustomFilledButtonStyle {
+
     public func makeBody(configuration: Configuration) -> some View {
         configuration.label
-            .frame(width: width, height: 44)
+            .frame(minWidth: minWidth, minHeight: minHeight)
             .padding(.horizontal, 14)
             .padding(.vertical, 6)
             .foregroundColor(
@@ -46,7 +50,5 @@ public struct CustomFilledButtonStyle: ButtonStyle {
             .cornerRadius(8)
     }
 }
-
-
 
 

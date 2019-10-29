@@ -10,31 +10,35 @@ import SwiftUI
 
 
 public struct CustomOutlinedButtonStyle: ButtonStyle {
-    public var width: CGFloat
-    public var height: CGFloat
+    public var minWidth: CGFloat?
+    public var minHeight: CGFloat?
     public var foregroundColor: Color
     public var borderColor: Color
     public var borderWidth: CGFloat
     
     
     public init(
-        width: CGFloat = 44,
-        height: CGFloat = 44,
+        width: CGFloat? = 44,
+        height: CGFloat? = 44,
         foregroundColor: Color = .accentColor,
         borderColor: Color = .accentColor,
         borderWidth: CGFloat = 3.0
     ) {
-        self.width = width
-        self.height = height
+        self.minWidth = width
+        self.minHeight = height
         self.foregroundColor = foregroundColor
         self.borderColor = borderColor
         self.borderWidth = borderWidth
     }
-    
+}
+
+
+// MARK: - makeBody
+extension CustomOutlinedButtonStyle {
     
     public func makeBody(configuration: Configuration) -> some View {
         configuration.label
-            .frame(width: width, height: height)
+            .frame(minWidth: minWidth, minHeight: minHeight)
             .padding(.horizontal, 14)
             .padding(.vertical, 6)
             .foregroundColor(foregroundColor)
@@ -44,4 +48,5 @@ public struct CustomOutlinedButtonStyle: ButtonStyle {
             )
     }
 }
+
 
