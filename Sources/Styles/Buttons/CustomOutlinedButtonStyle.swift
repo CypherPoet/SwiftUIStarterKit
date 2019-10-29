@@ -10,8 +10,17 @@ import SwiftUI
 
 
 public struct CustomOutlinedButtonStyle: ButtonStyle {
-    public var foregroundColor: Color = .accentColor
-    public var borderColor: Color = .accentColor
+    public var foregroundColor: Color
+    public var borderColor: Color
+    
+    
+    public init(
+        foregroundColor: Color = .accentColor,
+        borderColor: Color = .accentColor,
+    ) {
+        self.foregroundColor = foregroundColor
+        self.borderColor = borderColor
+    }
     
     
     public func makeBody(configuration: Configuration) -> some View {
