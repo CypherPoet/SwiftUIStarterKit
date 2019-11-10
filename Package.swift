@@ -11,18 +11,7 @@ let package = Package(
     ],
     products: [
         // Products define the executables and libraries produced by a package, and make them visible to other packages.
-        .library(
-            name: "CypherPoetSwiftUIKit",
-            targets: [
-                "CypherPoetSwiftUIKit.ButtonStyles",
-                "CypherPoetSwiftUIKit.DataFlowUtils",
-                "CypherPoetSwiftUIKit.ImageUtils",
-                "CypherPoetSwiftUIKit.PreviewUtils",
-                "CypherPoetSwiftUIKit.RefreshableScrollView",
-                "CypherPoetSwiftUIKit.ShapeUtils",
-                "CypherPoetSwiftUIKit.ViewModifiers",
-            ]
-        ),
+        .library(name: "CypherPoetSwiftUIKit", targets: ["CypherPoetSwiftUIKit"]),
         .library(name: "CypherPoetSwiftUIKit.ButtonStyles", targets: ["CypherPoetSwiftUIKit.ButtonStyles"]),
         .library(name: "CypherPoetSwiftUIKit.DataFlowUtils", targets: ["CypherPoetSwiftUIKit.DataFlowUtils"]),
         .library(name: "CypherPoetSwiftUIKit.ImageUtils", targets: ["CypherPoetSwiftUIKit.ImageUtils"]),
@@ -38,6 +27,18 @@ let package = Package(
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
         // Targets can depend on other targets in this package, and on products in packages which this package depends on.
+        .target(
+            name: "CypherPoetSwiftUIKit",
+            dependencies: [
+                "CypherPoetSwiftUIKit.ButtonStyles",
+                "CypherPoetSwiftUIKit.DataFlowUtils",
+                "CypherPoetSwiftUIKit.ImageUtils",
+                "CypherPoetSwiftUIKit.PreviewUtils",
+                "CypherPoetSwiftUIKit.RefreshableScrollView",
+                "CypherPoetSwiftUIKit.ShapeUtils",
+                "CypherPoetSwiftUIKit.ViewModifiers",
+            ]
+        ),
         .target(
             name: "CypherPoetSwiftUIKit.ButtonStyles",
             dependencies: [],
