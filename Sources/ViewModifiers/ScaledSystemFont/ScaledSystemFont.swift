@@ -2,7 +2,6 @@ import Foundation
 import SwiftUI
 
 
-@available(iOS 13, macCatalyst 13, tvOS 13, watchOS 6, *)
 public struct ScaledSystemFont: ViewModifier {
     
     /// The `ScaledFont` struct won't actually use this. But watching it here lets

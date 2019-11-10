@@ -14,15 +14,13 @@ extension View {
     ///
     /// This allows us to declaratively use conditional modifiers that may result in a different type
     /// based upon the predicate within the same function that has to return `some View`.
-    public func conditionallyApply<Modifier>(
-        _ modifier1: Modifier,
+    public func conditionallyApply<Modifier: ViewModifier>(
+        _ modifier: Modifier,
         if predicate: Bool
-    ) -> some View
-        where Modifier: ViewModifier
-    {
+    ) -> some View {
         Group {
             if predicate {
-                self.modifier(modifier1)
+                self.modifier(modifier)
             } else {
                 self
             }
