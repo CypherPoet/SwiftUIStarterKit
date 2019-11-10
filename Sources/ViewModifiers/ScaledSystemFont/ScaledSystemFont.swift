@@ -18,6 +18,6 @@ public struct ScaledSystemFont: ViewModifier {
     public func body(content: Content) -> some View {
        let scaledSize = UIFontMetrics.default.scaledValue(for: size)
         
-        return content.font(.system(size: size, weight: weight, design: design))
+        return content.font(.system(size: scaledSize, weight: weight, design: design))
     }
 }
