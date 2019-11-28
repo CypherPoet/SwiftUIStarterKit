@@ -7,7 +7,7 @@
 
 import Foundation
 import Combine
-
+import SwiftUI
 
 
 public final class Store<AppState, AppAction>: ObservableObject {
@@ -21,7 +21,11 @@ public final class Store<AppState, AppAction>: ObservableObject {
         self.state = initialState
         self.appReducer = appReducer
     }
-    
+}
+
+
+// MARK: - Send Actions and Side Effects
+extension Store {
     
     public func send(_ action: AppAction) {
         appReducer.reduce(&state, action)
@@ -38,5 +42,21 @@ public final class Store<AppState, AppAction>: ObservableObject {
                 self?.send(appAction)
             })
             .store(in: &cancellables)
+    }
+}
+
+
+// MARK: - Binding
+
+extension Store {
+    
+    public func binding<Value>(
+        for keyPath: KeyPath<AppState, Value>,
+        onChange action: @escaping (Value) -> AppAction
+    ) -> Binding<Value> {
+        Binding<Value>(
+            get: { self.state[keyPath: keyPath] },
+            set: { self.send(action($0)) }
+        )
     }
 }
