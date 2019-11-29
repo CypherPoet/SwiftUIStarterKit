@@ -36,7 +36,7 @@ public struct CustomOutlinedButtonStyle: ButtonStyle {
 // MARK: - makeBody
 extension CustomOutlinedButtonStyle {
     
-    public func makeBody(configuration: Configuration) -> some View {
+    public func makeBody(configuration: ButtonStyleConfiguration) -> some View {
         configuration.label
             .frame(minWidth: minWidth, minHeight: minHeight)
             .padding(.horizontal, 14)
