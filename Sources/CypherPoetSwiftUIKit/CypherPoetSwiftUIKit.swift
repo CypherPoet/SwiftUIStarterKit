@@ -5,5 +5,4 @@
 @_exported import CypherPoetSwiftUIKit_ImageUtils
 @_exported import CypherPoetSwiftUIKit_PreviewUtils
 @_exported import CypherPoetSwiftUIKit_RefreshableScrollView
-@_exported import CypherPoetSwiftUIKit_ShapeUtils
 @_exported import CypherPoetSwiftUIKit_ViewModifiers
