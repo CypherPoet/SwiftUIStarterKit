@@ -31,7 +31,6 @@ public struct CustomFilledButtonStyle: ButtonStyle {
         self.foregroundColor = foregroundColor
         self.foregroundColorWhenPressed = foregroundColorWhenPressed
     }
-    
 }
  
 
