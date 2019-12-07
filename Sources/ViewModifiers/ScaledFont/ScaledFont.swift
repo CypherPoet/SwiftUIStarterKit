@@ -8,8 +8,18 @@ public struct ScaledFont: ViewModifier {
     /// the system know that it needs to reload the `body` view when changes occur.
     @Environment(\.sizeCategory) var sizeCategory
     
+    
     public var name: String
     public var size: CGFloat
+    
+    
+    public init(
+        name: String,
+        size: CGFloat
+    ) {
+        self.name = name
+        self.size = size
+    }
     
 
     public func body(content: Content) -> some View {

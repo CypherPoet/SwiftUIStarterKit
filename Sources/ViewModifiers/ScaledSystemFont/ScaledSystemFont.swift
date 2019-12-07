@@ -10,9 +10,20 @@ public struct ScaledSystemFont: ViewModifier {
     
     
     public var size: CGFloat
-    public var weight: Font.Weight = .regular
-    public var design: Font.Design = .default
+    public var weight: Font.Weight
+    public var design: Font.Design
 
+    
+    public init(
+        size: CGFloat,
+        weight: Font.Weight = .regular,
+        design: Font.Design = .default
+    ) {
+        self.size = size
+        self.weight = weight
+        self.design = design
+    }
+    
     
     public func body(content: Content) -> some View {
        let scaledSize = UIFontMetrics.default.scaledValue(for: size)
