@@ -2,28 +2,28 @@ import Foundation
 
 
 public struct IndexedCollection<Base: RandomAccessCollection>: RandomAccessCollection {
-    typealias Index = Base.Index
-    typealias Element = (index: Index, element: Base.Element)
+    public typealias Index = Base.Index
+    public typealias Element = (index: Index, element: Base.Element)
 
-    let base: Base
+    public let base: Base
 
-    var startIndex: Index { base.startIndex }
+    public var startIndex: Index { base.startIndex }
 
-    var endIndex: Index { base.endIndex }
+    public var endIndex: Index { base.endIndex }
 
-    func index(after i: Index) -> Index {
+    public func index(after i: Index) -> Index {
         base.index(after: i)
     }
 
-    func index(before i: Index) -> Index {
+    public func index(before i: Index) -> Index {
         base.index(before: i)
     }
 
-    func index(_ i: Index, offsetBy distance: Int) -> Index {
+    public func index(_ i: Index, offsetBy distance: Int) -> Index {
         base.index(i, offsetBy: distance)
     }
 
-    subscript(position: Index) -> Element {
+    public subscript(position: Index) -> Element {
         (index: position, element: base[position])
     }
 }
