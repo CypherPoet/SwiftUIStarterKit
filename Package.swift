@@ -12,7 +12,8 @@ let package = Package(
     products: [
         // Products define the executables and libraries produced by a package, and make them visible to other packages.
         .library(name: "CypherPoetSwiftUIKit", targets: ["CypherPoetSwiftUIKit"]),
-        
+
+        .library(name: "CypherPoetSwiftUIKit.BindingUtils", targets: ["CypherPoetSwiftUIKit.BindingUtils"]),
         .library(name: "CypherPoetSwiftUIKit.ButtonStyles", targets: ["CypherPoetSwiftUIKit.ButtonStyles"]),
         .library(name: "CypherPoetSwiftUIKit.DataFlowUtils", targets: ["CypherPoetSwiftUIKit.DataFlowUtils"]),
         .library(name: "CypherPoetSwiftUIKit.ImageUtils", targets: ["CypherPoetSwiftUIKit.ImageUtils"]),
@@ -31,6 +32,7 @@ let package = Package(
         .target(
             name: "CypherPoetSwiftUIKit",
             dependencies: [
+                "CypherPoetSwiftUIKit.BindingUtils",
                 "CypherPoetSwiftUIKit.ButtonStyles",
                 "CypherPoetSwiftUIKit.DataFlowUtils",
                 "CypherPoetSwiftUIKit.ImageUtils",
@@ -41,6 +43,11 @@ let package = Package(
             ]
         ),
         
+        .target(
+            name: "CypherPoetSwiftUIKit.BindingUtils",
+            dependencies: [],
+            path: "Sources/BindingUtils"
+        ),
         .target(
             name: "CypherPoetSwiftUIKit.ButtonStyles",
             dependencies: [],

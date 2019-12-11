@@ -1,5 +1,6 @@
 // A module that re-exports the complete CypherPoetSwiftUIKit public API.
 
+@_exported import CypherPoetSwiftUIKit_BindingUtils
 @_exported import CypherPoetSwiftUIKit_ButtonStyles
 @_exported import CypherPoetSwiftUIKit_DataFlowUtils
 @_exported import CypherPoetSwiftUIKit_ImageUtils
