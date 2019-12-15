@@ -28,3 +28,13 @@ public struct ScaledFont: ViewModifier {
         return content.font(.custom(name, size: scaledSize))
     }
 }
+
+
+// 🔑 Even with a `ScaledFont` modifier, it will probably be handy to base the
+// initial size off of an initial `TextStyle` point size.
+extension Font {
+
+    public func scaledTextSize(forStyle style: UIFont.TextStyle) -> CGFloat {
+        UIFont.preferredFont(forTextStyle: style).pointSize
+    }
+}
