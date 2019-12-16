@@ -34,7 +34,7 @@ public struct ScaledFont: ViewModifier {
 // initial size off of an initial `TextStyle` point size.
 extension Font {
 
-    public func scaledTextSize(forStyle style: UIFont.TextStyle) -> CGFloat {
+    public static func scaledTextSize(forStyle style: UIFont.TextStyle) -> CGFloat {
         UIFont.preferredFont(forTextStyle: style).pointSize
     }
 }
