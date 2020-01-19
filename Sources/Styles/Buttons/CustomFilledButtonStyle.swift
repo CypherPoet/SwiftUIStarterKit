@@ -23,7 +23,6 @@ public struct CustomFilledButtonStyle: ButtonStyle {
         fillColor: Color = .accentColor,
         foregroundColor: Color = .white,
         foregroundColorWhenPressed: Color = .gray
-        
     ) {
         self.minWidth = idealWidth
         self.minHeight = idealHeight

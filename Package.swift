@@ -19,7 +19,7 @@ let package = Package(
         .library(name: "CypherPoetSwiftUIKit.ImageUtils", targets: ["CypherPoetSwiftUIKit.ImageUtils"]),
         .library(name: "CypherPoetSwiftUIKit.PreviewUtils", targets: ["CypherPoetSwiftUIKit.PreviewUtils"]),
         .library(name: "CypherPoetSwiftUIKit.RefreshableScrollView", targets: ["CypherPoetSwiftUIKit.RefreshableScrollView"]),
-        .library(name: "CypherPoetSwiftUIKit.ViewExtensions", targets: ["CypherPoetSwiftUIKit.ViewModifiers"]),
+        .library(name: "CypherPoetSwiftUIKit.ViewExtensions", targets: ["CypherPoetSwiftUIKit.ViewExtensions"]),
         .library(name: "CypherPoetSwiftUIKit.ViewModifiers", targets: ["CypherPoetSwiftUIKit.ViewModifiers"]),
     ],
     dependencies: [
