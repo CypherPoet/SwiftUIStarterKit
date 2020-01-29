@@ -3,7 +3,7 @@ import SwiftUI
 
 
 @available(iOS 13, macCatalyst 13, tvOS 13, watchOS 6, *)
-extension View {
+extension Text {
     
     public func scaledSystemFont(
         size: CGFloat,

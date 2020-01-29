@@ -3,14 +3,20 @@ import SwiftUI
 
 extension Group where Content: View {
     
-    /// Dynamically embed the content of a `Group` in a `VStack` or an `HStack`, depending
-    /// on the specified `verticalSizes.`
-    public func embedInStack(
-        verticalSizes: [ContentSizeCategory] = EmbedInStack.defaultVerticalSizes
+    /// Dynamically embeds the content of a `Group` in a `VStack` or an `HStack`.
+    ///
+    /// Content will be embedded in a `VStack` if:
+    ///   * The current value of `Environment.sizeCategory` lies within the
+    ///     specified `compactableContentSizes.`
+    ///   * The current value of `Environment.horizontalSizeClass`matches `.compact`
+    ///
+    /// Otherwise, content will be embedded in an `HStack`.
+    public func embedInCompactableStack(
+        compactableContentSizes: [ContentSizeCategory] = EmbedInCompactableStack.defaultVerticalSizes
     ) -> some View {
         ModifiedContent(
             content: self,
-            modifier: EmbedInStack(verticalSizes: verticalSizes)
+            modifier: EmbedInCompactableStack(compactableContentSizes: compactableContentSizes)
         )
     }
 }
