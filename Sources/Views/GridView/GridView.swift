@@ -2,16 +2,16 @@ import SwiftUI
 
 
 
-struct GridView<Item, Content: View> {
-    let items: [Item]
-    let columnCount: Int
-    let content: (CGFloat, Item) -> Content
-    let scrollAxes: Axis.Set
-    let showsScrollIndicators: Bool
+public struct GridView<Item, Content: View> {
+    public let items: [Item]
+    public let columnCount: Int
+    public let content: (CGFloat, Item) -> Content
+    public let scrollAxes: Axis.Set
+    public let showsScrollIndicators: Bool
     
     
     // MARK: - Init
-    init(
+    public init(
         items: [Item] = [],
         columnCount: Int = 2,
         scrollAxes: Axis.Set = [.vertical],
@@ -30,7 +30,7 @@ struct GridView<Item, Content: View> {
 // MARK: - View
 extension GridView: View {
 
-    var body: some View {
+    public var body: some View {
         ScrollView(scrollAxes, showsIndicators: showsScrollIndicators) {
             GeometryReader { geometry in
                 VStack(spacing: 0) {
@@ -46,7 +46,7 @@ extension GridView: View {
 
 // MARK: - Computeds
 extension GridView {
-    var rowCount: Int { ((items.count - 1) / columnCount) + 1 }
+    public var rowCount: Int { ((items.count - 1) / columnCount) + 1 }
 }
 
 
