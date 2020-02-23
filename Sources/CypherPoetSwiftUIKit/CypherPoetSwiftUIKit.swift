@@ -8,5 +8,6 @@
 @_exported import CypherPoetSwiftUIKit_PreviewUtils
 @_exported import CypherPoetSwiftUIKit_RefreshableScrollView
 @_exported import CypherPoetSwiftUIKit_TextStyles
+@_exported import CypherPoetSwiftUIKit_UIKitWrappers
 @_exported import CypherPoetSwiftUIKit_ViewExtensions
 @_exported import CypherPoetSwiftUIKit_ViewModifiers
