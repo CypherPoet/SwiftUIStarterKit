@@ -5,9 +5,20 @@ import UIKit
 public struct UIActivityIndicatorWrapper {
     public typealias UIViewType = UIActivityIndicatorView
     
-    public var color: UIColor = .systemGray
-    public var backgroundColor: UIColor = .clear
-    public var indicatorStyle: UIActivityIndicatorView.Style = .large
+    public var color: UIColor
+    public var backgroundColor: UIColor
+    public var indicatorStyle: UIActivityIndicatorView.Style
+    
+
+    public init(
+        color: UIColor = .systemGray,
+        backgroundColor: UIColor = .clear,
+        indicatorStyle: UIActivityIndicatorView.Style = .large
+    ) {
+        self.color = color
+        self.backgroundColor = backgroundColor
+        self.indicatorStyle = indicatorStyle
+    }
 }
 
 
