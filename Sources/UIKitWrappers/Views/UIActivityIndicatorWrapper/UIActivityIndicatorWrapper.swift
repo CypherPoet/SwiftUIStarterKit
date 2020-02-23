@@ -3,7 +3,7 @@ import UIKit
 
 
 public struct UIActivityIndicatorWrapper {
-    typealias UIViewType = UIActivityIndicatorView
+    public typealias UIViewType = UIActivityIndicatorView
     
     public var color: UIColor = .systemGray
     public var backgroundColor: UIColor = .clear
@@ -14,7 +14,7 @@ public struct UIActivityIndicatorWrapper {
 // MARK: - UIViewRepresentable
 extension UIActivityIndicatorWrapper: UIViewRepresentable {
 
-    func makeUIView(
+    public func makeUIView(
         context: UIViewRepresentableContext<UIActivityIndicatorWrapper>
     ) -> UIViewType {
         let activityIndicator = UIActivityIndicatorView(style: indicatorStyle)
@@ -27,7 +27,7 @@ extension UIActivityIndicatorWrapper: UIViewRepresentable {
     }
 
 
-    func updateUIView(
+    public func updateUIView(
         _ activityIndicator: UIViewType,
         context: UIViewRepresentableContext<UIActivityIndicatorWrapper>
     ) {
