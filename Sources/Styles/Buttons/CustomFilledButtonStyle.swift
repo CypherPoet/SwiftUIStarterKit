@@ -15,20 +15,23 @@ public struct CustomFilledButtonStyle: ButtonStyle {
     public var fillColor: Color
     public var foregroundColor: Color
     public var foregroundColorWhenPressed: Color
+    public var cornerRadius: CGFloat
     
     
     public init(
-        idealWidth: CGFloat? = 44,
-        idealHeight: CGFloat? = 44,
+        minWidth: CGFloat? = 44,
+        minHeight: CGFloat? = 44,
         fillColor: Color = .accentColor,
-        foregroundColor: Color = .white,
-        foregroundColorWhenPressed: Color = .gray
+        foregroundColor: Color = .primary,
+        foregroundColorWhenPressed: Color = .gray,
+        cornerRadius: CGFloat = 8.0
     ) {
-        self.minWidth = idealWidth
-        self.minHeight = idealHeight
+        self.minWidth = minWidth
+        self.minHeight = minHeight
         self.fillColor = fillColor
         self.foregroundColor = foregroundColor
         self.foregroundColorWhenPressed = foregroundColorWhenPressed
+        self.cornerRadius = cornerRadius
     }
 }
  
@@ -42,11 +45,10 @@ extension CustomFilledButtonStyle {
             .padding(.horizontal, 14)
             .padding(.vertical, 6)
             .foregroundColor(
-                configuration.isPressed ? foregroundColorWhenPressed : .white
+                configuration.isPressed ? foregroundColorWhenPressed : foregroundColor
             )
+            .animation(.easeInOut)
             .background(fillColor)
-            .cornerRadius(8)
+            .cornerRadius(cornerRadius)
     }
 }
-
-

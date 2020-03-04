@@ -21,7 +21,7 @@ _A collection of some personal utilities that I use for building SwiftUI applica
 let package = Package(
     //...
     dependencies: [
-        .package(url: "https://github.com/CypherPoet/CypherPoetSwiftUIKit", .branch("master"))
+        .package(url: "https://github.com/CypherPoet/CypherPoetSwiftUIKit", .branch("master")),
     ],
     //...
 )
@@ -38,8 +38,18 @@ import CypherPoetSwiftUIKit_DataFlowUtils
 ```
 
 
-## Disclaimer
+## ⚠️ Disclaimer
 
-This project is mainly for personal use and experimentation, and, as the commit history shows, is subject to fast and loose changes. I'm also thinking that a lot of these utilities can be broken up into standalone Swift packages, and might pursue that direction in the future.
+This project is mainly for personal use and experimentation, and, as the commit history shows, is subject to fast and loose changes. I'm also thinking that this package's libraries can be broken into standalone Swift packages, and might pursue that direction in the future.
 
-Nonetheless, several people have asked me to open source the project so they can use it as inspiration or as a starting point for their own utilities. This would be my recommended approach (instead of attempting direct usage).
+Nonetheless, several people have asked me to open source the project so they can use it as inspiration or as a starting point for their own utilities. This would be my recommended approach, though if you really want to be edgy and attempt direct usage, please at least specify a specific release tag, like so:
+
+```swift
+let package = Package(
+    //...
+    dependencies: [
+        .package(url: "https://github.com/CypherPoet/CypherPoetSwiftUIKit", .exact("0.0.42")),
+    ],
+    //...
+)
+```
