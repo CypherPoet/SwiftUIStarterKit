@@ -5,12 +5,12 @@
 // ✌️
 //
 
-import Foundation
 import Combine
 
 
 public protocol SideEffect {
-    associatedtype Action
+    associatedtype AppAction
     
-    func mapToAction() -> AnyPublisher<Action, Never>
+    func mapToAction() -> AnyPublisher<AppAction, Never>
 }
+

@@ -32,13 +32,13 @@ extension Store {
     }
     
     
-    /// Asynchronously sends an action after mapping it out of a side effect
-    public func send<S: SideEffect>(_ sideEffect: S) where S.Action == AppAction {
+    /// Asynchronously sends an action through the app's reducer
+    /// after mapping it out of a side effect.
+    public func send<S: SideEffect>(_ sideEffect: S) where S.AppAction == AppAction {
         sideEffect
             .mapToAction()
             .receive(on: DispatchQueue.main)
-            .sink(receiveValue: { [weak self] (appAction) in
-                // https://twitter.com/thesunshinejr/status/1186704338686750722
+            .sink(receiveValue: { [weak self] appAction in
                 self?.send(appAction)
             })
             .store(in: &cancellables)
