@@ -16,10 +16,8 @@ let package = Package(
         .library(name: "CypherPoetSwiftUIKit.BindingUtils", targets: ["CypherPoetSwiftUIKit.BindingUtils"]),
         .library(name: "CypherPoetSwiftUIKit.ButtonStyles", targets: ["CypherPoetSwiftUIKit.ButtonStyles"]),
         .library(name: "CypherPoetSwiftUIKit.DataFlowUtils", targets: ["CypherPoetSwiftUIKit.DataFlowUtils"]),
-        .library(name: "CypherPoetSwiftUIKit.GridView", targets: ["CypherPoetSwiftUIKit.GridView"]),
         .library(name: "CypherPoetSwiftUIKit.ImageUtils", targets: ["CypherPoetSwiftUIKit.ImageUtils"]),
         .library(name: "CypherPoetSwiftUIKit.PreviewUtils", targets: ["CypherPoetSwiftUIKit.PreviewUtils"]),
-        .library(name: "CypherPoetSwiftUIKit.RefreshableScrollView", targets: ["CypherPoetSwiftUIKit.RefreshableScrollView"]),
         .library(name: "CypherPoetSwiftUIKit.TextStyles", targets: ["CypherPoetSwiftUIKit.TextStyles"]),
         .library(name: "CypherPoetSwiftUIKit.UIKitWrappers", targets: ["CypherPoetSwiftUIKit.UIKitWrappers"]),
         .library(name: "CypherPoetSwiftUIKit.ViewExtensions", targets: ["CypherPoetSwiftUIKit.ViewExtensions"]),
@@ -38,10 +36,8 @@ let package = Package(
                 "CypherPoetSwiftUIKit.BindingUtils",
                 "CypherPoetSwiftUIKit.ButtonStyles",
                 "CypherPoetSwiftUIKit.DataFlowUtils",
-                "CypherPoetSwiftUIKit.GridView",
                 "CypherPoetSwiftUIKit.ImageUtils",
                 "CypherPoetSwiftUIKit.PreviewUtils",
-                "CypherPoetSwiftUIKit.RefreshableScrollView",
                 "CypherPoetSwiftUIKit.TextStyles",
                 "CypherPoetSwiftUIKit.UIKitWrappers",
                 "CypherPoetSwiftUIKit.ViewExtensions",
@@ -70,14 +66,7 @@ let package = Package(
             path: "Sources/DataFlowUtils"
         ),
         
-        
-        .target(
-            name: "CypherPoetSwiftUIKit.GridView",
-            dependencies: [],
-            path: "Sources/Views/GridView"
-        ),
-        
-        
+
         .target(
             name: "CypherPoetSwiftUIKit.ImageUtils",
             dependencies: [],
@@ -89,13 +78,6 @@ let package = Package(
             name: "CypherPoetSwiftUIKit.PreviewUtils",
             dependencies: [],
             path: "Sources/PreviewUtils"
-        ),
-        
-        
-        .target(
-            name: "CypherPoetSwiftUIKit.RefreshableScrollView",
-            dependencies: [],
-            path: "Sources/Views/RefreshableScrollView"
         ),
         
         
