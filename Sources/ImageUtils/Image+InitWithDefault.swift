@@ -6,26 +6,38 @@
 // ✌️
 //
 
-import UIKit
+
 import SwiftUI
 
 
 extension Image {
 
-    public init(_ assetName: String, defaultAssetName: String) {
+    /// Tries to create an image with one asset name, the falls back to a default asset name.
+    public init(assetName: String, defaultingToAssetName defaultAssetName: String) {
         if let image = UIImage(named: assetName) {
             self.init(uiImage: image)
         } else {
             self.init(defaultAssetName)
         }
     }
-    
-    
-    public init(_ systemName: String, defaultSystemName: String) {
+
+
+    /// Tries to create an image with one asset name, the falls back to a default _system_ name.
+    public init(systemName: String, defaultingToSystemName defaultSystemName: String) {
         if let image = UIImage(systemName: systemName) {
             self.init(uiImage: image)
         } else {
             self.init(systemName: defaultSystemName)
+        }
+    }
+
+
+    /// Tries to create an image with one asset name, the falls back to a default _asset_ name.
+    public init(systemName: String, defaultingToAssetName defaultAssetName: String) {
+        if let image = UIImage(systemName: systemName) {
+            self.init(uiImage: image)
+        } else {
+            self.init(defaultAssetName)
         }
     }
 }
