@@ -1,17 +1,17 @@
 import SwiftUI
 
 
-struct ActivityIndicatorViewWrapper {
-    typealias UIViewType = UIActivityIndicatorView
-    
-    var isAnimating: Bool
-    var color: UIColor
-    var backgroundColor: UIColor
-    var indicatorStyle: UIActivityIndicatorView.Style
-    var hidesWhenStopped: Bool
+public struct ActivityIndicatorViewWrapper {
+    public typealias UIViewType = UIActivityIndicatorView
 
-    
-    init(
+    public var isAnimating: Bool
+    public var color: UIColor
+    public var backgroundColor: UIColor
+    public var indicatorStyle: UIActivityIndicatorView.Style
+    public var hidesWhenStopped: Bool
+
+
+    public init(
         isAnimating: Bool,
         color: UIColor = .systemGray,
         backgroundColor: UIColor = .clear,
@@ -31,18 +31,16 @@ struct ActivityIndicatorViewWrapper {
 extension ActivityIndicatorViewWrapper: UIViewRepresentable {
 
     // Treat the `makeUIView` method as `init(frame: CGRect)` in a normal UIKit `UIView`.
-    func makeUIView(context: Context) -> UIViewType {
+    public func makeUIView(context: Context) -> UIViewType {
         let activityIndicator = UIActivityIndicatorView()
 
-        configure(activityIndicator)
-        
         return activityIndicator
     }
 
 
-    func updateUIView(_ activityIndicator: UIViewType, context: Context) {
-        configure(activityIndicator)
-        
+    public func updateUIView(_ activityIndicator: UIViewType, context: Context) {
+        configure(activityIndicator, in: context)
+
         isAnimating ? activityIndicator.startAnimating() : activityIndicator.stopAnimating()
     }
 }
@@ -50,8 +48,8 @@ extension ActivityIndicatorViewWrapper: UIViewRepresentable {
 
 // MARK: - View Configuration
 extension ActivityIndicatorViewWrapper {
-    
-    func configure(_ activityIndicator: UIActivityIndicatorView) {
+
+    public func configure(_ activityIndicator: UIActivityIndicatorView, in context: Context) {
         activityIndicator.sizeToFit()
         activityIndicator.style = indicatorStyle
         activityIndicator.color = color
