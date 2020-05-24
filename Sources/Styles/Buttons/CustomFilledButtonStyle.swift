@@ -10,8 +10,9 @@ import SwiftUI
 
 
 public struct CustomFilledButtonStyle: ButtonStyle {
-    public var minWidth: CGFloat?
-    public var minHeight: CGFloat?
+    public var minWidth: CGFloat
+    public var maxWidth: CGFloat
+    public var minHeight: CGFloat
     public var fillColor: Color
     public var foregroundColor: Color
     public var foregroundColorWhenPressed: Color
@@ -19,14 +20,16 @@ public struct CustomFilledButtonStyle: ButtonStyle {
     
     
     public init(
-        minWidth: CGFloat? = 44,
-        minHeight: CGFloat? = 44,
+        minWidth: CGFloat = 44,
+        maxWidth: CGFloat = .infinity,
+        minHeight: CGFloat = 44,
         fillColor: Color = .accentColor,
         foregroundColor: Color = .primary,
         foregroundColorWhenPressed: Color = .gray,
         cornerRadius: CGFloat = 8.0
     ) {
         self.minWidth = minWidth
+        self.maxWidth = maxWidth
         self.minHeight = minHeight
         self.fillColor = fillColor
         self.foregroundColor = foregroundColor
