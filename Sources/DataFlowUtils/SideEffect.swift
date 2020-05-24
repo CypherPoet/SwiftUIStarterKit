@@ -10,7 +10,8 @@ import Combine
 
 public protocol SideEffect {
     associatedtype AppAction
-    
-    func mapToAction() -> AnyPublisher<AppAction, Never>
+    associatedtype AppEnvironment
+
+    func mapToAction(using environment: AppEnvironment) -> AnyPublisher<AppAction, Never>
 }
 
