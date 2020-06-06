@@ -3,6 +3,7 @@
 @_exported import CypherPoetSwiftUIKit_BindingUtils
 @_exported import CypherPoetSwiftUIKit_ButtonStyles
 @_exported import CypherPoetSwiftUIKit_DataFlowUtils
+@_exported import CypherPoetSwiftUIKit_GradientUtils
 @_exported import CypherPoetSwiftUIKit_ImageUtils
 @_exported import CypherPoetSwiftUIKit_PreviewUtils
 @_exported import CypherPoetSwiftUIKit_TextStyles
