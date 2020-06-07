@@ -1,8 +1,11 @@
 import SwiftUI
 
 
-/// Helpers for manually simulating landscape-mode previews, since this is not yet supported directly
-/// Reference: https://developer.apple.com/design/human-interface-guidelines/ios/visual-design/adaptivity-and-layout/
+// Helpers for manually simulating landscape-mode previews, since this is not yet supported directly
+// Reference:
+//  https://developer.apple.com/design/human-interface-guidelines/ios/visual-design/adaptivity-and-layout/
+
+
 extension PreviewLayout {
 
     // MARK: - iPhone
