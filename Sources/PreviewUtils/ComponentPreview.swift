@@ -3,10 +3,10 @@
 import SwiftUI
 
 
-struct ComponentPreview<Component: View>: View {
-    var component: Component
+public struct ComponentPreview<Component: View>: View {
+    public var component: Component
 
-    var body: some View {
+    public var body: some View {
         ForEach(ColorScheme.allCases, id: \.self) { scheme in
             ForEach(ContentSizeCategory.smallestAndLargest, id: \.self) { category in
                 self.component
@@ -25,7 +25,7 @@ struct ComponentPreview<Component: View>: View {
 
 extension View {
 
-    func previewAsComponent() -> some View {
+    public func previewAsComponent() -> some View {
         ComponentPreview(component: self)
     }
 }

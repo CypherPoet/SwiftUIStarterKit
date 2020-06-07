@@ -5,7 +5,7 @@ import SwiftUI
 
 extension Binding {
 
-    static func mock(_ value: Value) -> Self {
+    public static func mock(_ value: Value) -> Self {
         var mockedValue = value
 
         return Binding(

@@ -4,10 +4,10 @@ import SwiftUI
 
 
 extension ContentSizeCategory {
-    static let smallestAndLargest = [allCases.first!, allCases.last!]
+    public static let smallestAndLargest = [allCases.first!, allCases.last!]
 
 
-    var previewName: String {
+    public var previewName: String {
         if self == Self.smallestAndLargest.first {
             return "Smallest"
         }

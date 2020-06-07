@@ -5,7 +5,7 @@ import SwiftUI
 
 extension ColorScheme {
 
-    var previewName: String {
+    public var previewName: String {
         String(describing: self).capitalized
     }
 }

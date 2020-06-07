@@ -3,10 +3,10 @@
 import SwiftUI
 
 
-struct ScreenPreview<Screen: View>: View {
-    var screen: Screen
+public struct ScreenPreview<Screen: View>: View {
+    public var screen: Screen
 
-    var body: some View {
+    public var body: some View {
         ForEach(PreviewDevice.all, id: \.self.rawValue) { device in
             ForEach(ColorScheme.allCases, id: \.self) { scheme in
                 NavigationView {
@@ -26,7 +26,7 @@ struct ScreenPreview<Screen: View>: View {
 
 extension View {
 
-    func previewAsScreen() -> some View {
+    public func previewAsScreen() -> some View {
         ScreenPreview(screen: self)
     }
 }
