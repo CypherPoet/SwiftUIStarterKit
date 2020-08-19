@@ -3,9 +3,14 @@
 import SwiftUI
 
 
-public struct ComponentPreview<Component: View>: View {
+public struct ComponentPreview<Component: View> {
     public var component: Component
+    public var displayName: String?
+}
 
+
+// MARK: - View
+extension ComponentPreview: View {
     public var body: some View {
         ForEach(ColorScheme.allCases, id: \.self) { scheme in
             ForEach(ContentSizeCategory.smallestAndLargest, id: \.self) { category in
@@ -15,7 +20,7 @@ public struct ComponentPreview<Component: View>: View {
                     .colorScheme(scheme)
                     .environment(\.sizeCategory, category)
                     .previewDisplayName(
-                        "\(scheme.previewName) + \(category.previewName)"
+                        displayName ?? "\(scheme.previewName) + \(category.previewName)"
                     )
             }
         }
@@ -25,8 +30,13 @@ public struct ComponentPreview<Component: View>: View {
 
 extension View {
 
-    public func previewAsComponent() -> some View {
-        ComponentPreview(component: self)
+    public func previewAsComponent(
+        displayName: String?
+    ) -> some View {
+        ComponentPreview(
+            component: self,
+            displayName: displayName
+        )
     }
 }
 
