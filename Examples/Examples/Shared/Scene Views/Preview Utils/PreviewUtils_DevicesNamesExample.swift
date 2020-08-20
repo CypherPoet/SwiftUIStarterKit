@@ -1,22 +1,18 @@
 //
-//  PreviewUtils_DevicesNamesExample.swift
-//  CypherPoetSwiftUIKitExamples
+// PreviewUtils_DevicesNamesExample.swift
+// Examples
 //
-// Created by Brian Sipple on 6/7/20.
-// Copyright © 2020 CypherPoet. All rights reserved.
+// Created by CypherPoet on 8/19/20.
+// ✌️
 //
 
 import SwiftUI
 import CypherPoetSwiftUIKit_PreviewUtils
 
 
+
 struct PreviewUtils_DevicesNamesExample {
 
-}
-
-
-// MARK: - Computeds
-extension PreviewUtils_DevicesNamesExample {
 }
 
 
@@ -30,6 +26,11 @@ extension PreviewUtils_DevicesNamesExample: View {
             }
         }
     }
+}
+
+
+// MARK: - Computeds
+extension PreviewUtils_DevicesNamesExample {
 }
 
 

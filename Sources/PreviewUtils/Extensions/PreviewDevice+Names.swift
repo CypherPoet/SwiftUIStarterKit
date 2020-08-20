@@ -18,7 +18,6 @@ extension PreviewDevice {
 }
 
 
-
 extension PreviewDevice {
     public static let iPhone8 = PreviewDevice(rawValue: PreviewDevice.Name.iPhone8)
     public static let iPhone8Plus = PreviewDevice(rawValue: PreviewDevice.Name.iPhone8Plus)

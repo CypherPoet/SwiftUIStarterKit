@@ -1,9 +1,9 @@
 //
-//  PreviewUtils_ScreenPreviewHelperExample.swift
-//  CypherPoetSwiftUIKitExamples
+// PreviewUtils_ScreenPreviewHelperExample.swift
+// Examples
 //
-// Created by Brian Sipple on 6/7/20.
-// Copyright © 2020 CypherPoet. All rights reserved.
+// Created by CypherPoet on 8/19/20.
+// ✌️
 //
 
 import SwiftUI
@@ -11,12 +11,6 @@ import CypherPoetSwiftUIKit_PreviewUtils
 
 
 struct PreviewUtils_ScreenPreviewHelperExample {
-
-}
-
-
-// MARK: - Computeds
-extension PreviewUtils_ScreenPreviewHelperExample {
 }
 
 
@@ -30,6 +24,11 @@ extension PreviewUtils_ScreenPreviewHelperExample: View {
             }
         }
     }
+}
+
+
+// MARK: - Computeds
+extension PreviewUtils_ScreenPreviewHelperExample {
 }
 
 
