@@ -15,31 +15,39 @@ _A collection of personal utilities that I use for building SwiftUI applications
 
 ## Installation
 
-`CypherPoetSwiftUIKit` can be used through the Swift Package Manager. You can add it as a dependency in your `Package.swift` file:
+### Xcode Projects
+
+Select `File` -> `Swift Packages` -> `Add Package Dependency` and enter `https://github.com/CypherPoet/CypherPoetSwiftUIKit`.
+
+
+### Swift Package Manager Projects
+
+You can add `CypherPoetSwiftUIKit` as a dependency in your `Package.swift` file:
 
 ```swift
 let package = Package(
     //...
     dependencies: [
-        .package(url: "https://github.com/CypherPoet/CypherPoetSwiftUIKit", .branch("master")),
+        .package(url: "https://github.com/CypherPoet/CypherPoetSwiftUIKit", from: "0.0.49"),
     ],
     //...
 )
 ```
+
 Then simply `import CypherPoetSwiftUIKit` wherever you’d like to use it.
 
 
 ## ⚠️ Disclaimer
 
-This project is mainly for personal use and experimentation, and, as the commit history shows, is subject to fast and loose changes. I'm also thinking that this package's libraries can be broken into standalone Swift packages, and might pursue that direction in the future.
+Currently, this project is mainly for personal use, and, as the commit history shows, is subject to fast and loose changes.
 
-Nonetheless, several people have asked me to open-source the project so they can use it as inspiration or as a starting point for their own utilities. This would be my recommended approach -- though if you really want to be edgy and attempt direct usage, please at least pin it to an exact release tag, like so:
+Nonetheless, several people have asked me to open-source it so they can use it as inspiration or as a starting point for their own utilities. That would be my recommended approach &mdash; though if you really want to be edgy and attempt direct usage, please at least pin it to an exact release tag, like so:
 
 ```swift
 let package = Package(
     //...
     dependencies: [
-        .package(url: "https://github.com/CypherPoet/CypherPoetSwiftUIKit", .exact("0.0.42")),
+        .package(url: "https://github.com/CypherPoet/CypherPoetSwiftUIKit", .exact("0.0.49")),
     ],
     //...
 )
