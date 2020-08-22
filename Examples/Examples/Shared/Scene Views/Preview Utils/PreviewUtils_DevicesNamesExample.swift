@@ -7,13 +7,11 @@
 //
 
 import SwiftUI
-import CypherPoetSwiftUIKit_PreviewUtils
+import CypherPoetSwiftUIKit
 
 
 
-struct PreviewUtils_DevicesNamesExample {
-
-}
+struct PreviewUtils_DevicesNamesExample {}
 
 
 // MARK: - `View` Body

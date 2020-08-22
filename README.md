@@ -9,7 +9,7 @@
     </a>
 </p>
 
-_A collection of some personal utilities that I use for building SwiftUI applications._
+_A collection of personal utilities that I use for building SwiftUI applications._
 
 
 
@@ -26,16 +26,7 @@ let package = Package(
     //...
 )
 ```
-
-
-## Usage
-
-To access all libraries built by the project, simply `import CypherPoetSwiftUIKit` wherever you’d like to use it. Alternatively, you can choose to have your Xcode Project build the individual libraries provided by the project, and then import them like so:
-
-```swift
-import CypherPoetSwiftUIKit_ButtonStyles
-import CypherPoetSwiftUIKit_DataFlowUtils
-```
+Then simply `import CypherPoetSwiftUIKit` wherever you’d like to use it.
 
 
 ## ⚠️ Disclaimer

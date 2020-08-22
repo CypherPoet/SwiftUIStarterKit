@@ -19,17 +19,14 @@ extension PreviewUtilsExamples: View {
 
     var body: some View {
         List {
-//            NavigationLink(destination: PreviewUtils_DevicesNamesExample()) {
-            NavigationLink(destination: Text("Device Names")) {
+            NavigationLink(destination: PreviewUtils_DevicesNamesExample()) {
                 Text("Device Names")
             }
-//            NavigationLink(destination: PreviewUtils_ScreenPreviewHelperExample()) {
-            NavigationLink(destination: Text("Screen Preview Helper")) {
+            NavigationLink(destination: PreviewUtils_ScreenPreviewHelperExample()) {
                 Text("Screen Preview Helper")
             }
         }
-        navigationBarTitle("Preview Utils")
-//        navigationTitle("Preview Utils")
+        .navigationTitle("Preview Utils")
     }
 }
 

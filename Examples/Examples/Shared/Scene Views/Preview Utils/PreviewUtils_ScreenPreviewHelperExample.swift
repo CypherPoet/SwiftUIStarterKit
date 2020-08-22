@@ -7,7 +7,7 @@
 //
 
 import SwiftUI
-import CypherPoetSwiftUIKit_PreviewUtils
+import CypherPoetSwiftUIKit
 
 
 struct PreviewUtils_ScreenPreviewHelperExample {
@@ -18,11 +18,7 @@ struct PreviewUtils_ScreenPreviewHelperExample {
 extension PreviewUtils_ScreenPreviewHelperExample: View {
 
     var body: some View {
-        VStack {
-            ForEach(PreviewDevice.all, id: \.self.rawValue) { device in
-                Text(device.rawValue)
-            }
-        }
+        Text("View me in Xcode Previews")
     }
 }
 
