@@ -15,7 +15,6 @@ let package = Package(
 
         .library(name: "CypherPoetSwiftUIKit.BindingUtils", targets: ["CypherPoetSwiftUIKit.BindingUtils"]),
         .library(name: "CypherPoetSwiftUIKit.ButtonStyles", targets: ["CypherPoetSwiftUIKit.ButtonStyles"]),
-        .library(name: "CypherPoetSwiftUIKit.DataFlowUtils", targets: ["CypherPoetSwiftUIKit.DataFlowUtils"]),
         .library(name: "CypherPoetSwiftUIKit.GradientUtils", targets: ["CypherPoetSwiftUIKit.GradientUtils"]),
         .library(name: "CypherPoetSwiftUIKit.ImageUtils", targets: ["CypherPoetSwiftUIKit.ImageUtils"]),
         .library(name: "CypherPoetSwiftUIKit.PreviewUtils", targets: ["CypherPoetSwiftUIKit.PreviewUtils"]),
@@ -36,7 +35,6 @@ let package = Package(
             dependencies: [
                 "CypherPoetSwiftUIKit.BindingUtils",
                 "CypherPoetSwiftUIKit.ButtonStyles",
-                "CypherPoetSwiftUIKit.DataFlowUtils",
                 "CypherPoetSwiftUIKit.GradientUtils",
                 "CypherPoetSwiftUIKit.ImageUtils",
                 "CypherPoetSwiftUIKit.PreviewUtils",
@@ -61,13 +59,6 @@ let package = Package(
             path: "Sources/Styles/Buttons"
         ),
         
-        
-        .target(
-            name: "CypherPoetSwiftUIKit.DataFlowUtils",
-            dependencies: [],
-            path: "Sources/DataFlowUtils"
-        ),
-
 
         .target(
             name: "CypherPoetSwiftUIKit.GradientUtils",

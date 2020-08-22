@@ -17,6 +17,38 @@
 		F3E41BC624EDF83400C30752 /* CypherPoetSwiftUIKit in Frameworks */ = {isa = PBXBuildFile; productRef = F3E41BC524EDF83400C30752 /* CypherPoetSwiftUIKit */; };
 		F3E41BC824EDF96B00C30752 /* PreviewUtils_DevicesNamesExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E41BC724EDF96B00C30752 /* PreviewUtils_DevicesNamesExample.swift */; };
 		F3E41BCA24EDF99D00C30752 /* PreviewUtils_ScreenPreviewHelperExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E41BC924EDF99D00C30752 /* PreviewUtils_ScreenPreviewHelperExample.swift */; };
+		F3E41BCC24EE008D00C30752 /* AppStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E41BCB24EE008D00C30752 /* AppStore.swift */; };
+		F3E41BCF24EE031C00C30752 /* AppStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E41BCB24EE008D00C30752 /* AppStore.swift */; };
+		F3E41BD024EE032700C30752 /* PreviewUtilsExamples.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E41BC224EDF80600C30752 /* PreviewUtilsExamples.swift */; };
+		F3E41BD124EE032700C30752 /* PreviewUtils_ScreenPreviewHelperExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E41BC924EDF99D00C30752 /* PreviewUtils_ScreenPreviewHelperExample.swift */; };
+		F3E41BD224EE032700C30752 /* PreviewUtils_DevicesNamesExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E41BC724EDF96B00C30752 /* PreviewUtils_DevicesNamesExample.swift */; };
+		F3E41BD924EE03F600C30752 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E41BD824EE03F600C30752 /* AppState.swift */; };
+		F3E41BDA24EE03F600C30752 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E41BD824EE03F600C30752 /* AppState.swift */; };
+		F3E41BDC24EE070200C30752 /* GalaxiesState.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E41BDB24EE070200C30752 /* GalaxiesState.swift */; };
+		F3E41BDD24EE070200C30752 /* GalaxiesState.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E41BDB24EE070200C30752 /* GalaxiesState.swift */; };
+		F3E41BE024EE089A00C30752 /* Galaxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E41BDF24EE089A00C30752 /* Galaxy.swift */; };
+		F3E41BE124EE089A00C30752 /* Galaxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E41BDF24EE089A00C30752 /* Galaxy.swift */; };
+		F3E41BEF24EF5D3100C30752 /* GalaxyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E41BEE24EF5D3100C30752 /* GalaxyService.swift */; };
+		F3E41BF024EF5D3100C30752 /* GalaxyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E41BEE24EF5D3100C30752 /* GalaxyService.swift */; };
+		F3E41BF324EF682600C30752 /* PreviewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E41BF224EF682600C30752 /* PreviewData.swift */; };
+		F3E41BF424EF682600C30752 /* PreviewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E41BF224EF682600C30752 /* PreviewData.swift */; };
+		F3E41BF624F012D900C30752 /* GalaxyServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E41BF524F012D900C30752 /* GalaxyServiceError.swift */; };
+		F3E41BF724F012D900C30752 /* GalaxyServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E41BF524F012D900C30752 /* GalaxyServiceError.swift */; };
+		F3E41BFA24F02A8000C30752 /* GalaxiesState+Middleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E41BF924F02A8000C30752 /* GalaxiesState+Middleware.swift */; };
+		F3E41BFB24F02A8000C30752 /* GalaxiesState+Middleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E41BF924F02A8000C30752 /* GalaxiesState+Middleware.swift */; };
+		F3E41BFD24F0424300C30752 /* LoggingMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E41BFC24F0424300C30752 /* LoggingMiddleware.swift */; };
+		F3E41BFE24F0424400C30752 /* LoggingMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E41BFC24F0424300C30752 /* LoggingMiddleware.swift */; };
+		F3E41C0024F07CC200C30752 /* GalaxiesState+MiddlewareError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E41BFF24F07CC200C30752 /* GalaxiesState+MiddlewareError.swift */; };
+		F3E41C0124F07CC200C30752 /* GalaxiesState+MiddlewareError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E41BFF24F07CC200C30752 /* GalaxiesState+MiddlewareError.swift */; };
+		F3E41CF124F0A9E800C30752 /* CypherPoetSwiftUIKit in Frameworks */ = {isa = PBXBuildFile; productRef = F3E41CF024F0A9E800C30752 /* CypherPoetSwiftUIKit */; };
+		F3E41D0524F0BA4E00C30752 /* ReduxDataFlow_SynchronousActionExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E41D0224F0BA4D00C30752 /* ReduxDataFlow_SynchronousActionExample.swift */; };
+		F3E41D0624F0BA4E00C30752 /* ReduxDataFlow_SynchronousActionExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E41D0224F0BA4D00C30752 /* ReduxDataFlow_SynchronousActionExample.swift */; };
+		F3E41D0724F0BA4E00C30752 /* ReduxDataFlowExamples.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E41D0324F0BA4D00C30752 /* ReduxDataFlowExamples.swift */; };
+		F3E41D0824F0BA4E00C30752 /* ReduxDataFlowExamples.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E41D0324F0BA4D00C30752 /* ReduxDataFlowExamples.swift */; };
+		F3E41D0924F0BA4E00C30752 /* ReduxDataFlow_AsyncSideEffectExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E41D0424F0BA4D00C30752 /* ReduxDataFlow_AsyncSideEffectExample.swift */; };
+		F3E41D0A24F0BA4E00C30752 /* ReduxDataFlow_AsyncSideEffectExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E41D0424F0BA4D00C30752 /* ReduxDataFlow_AsyncSideEffectExample.swift */; };
+		F3E41D0D24F0BB8200C30752 /* CypherPoetReduxUtils in Frameworks */ = {isa = PBXBuildFile; productRef = F3E41D0C24F0BB8200C30752 /* CypherPoetReduxUtils */; };
+		F3E41D0F24F0BB8F00C30752 /* CypherPoetReduxUtils in Frameworks */ = {isa = PBXBuildFile; productRef = F3E41D0E24F0BB8F00C30752 /* CypherPoetReduxUtils */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +64,19 @@
 		F3E41BC224EDF80600C30752 /* PreviewUtilsExamples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewUtilsExamples.swift; sourceTree = "<group>"; };
 		F3E41BC724EDF96B00C30752 /* PreviewUtils_DevicesNamesExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewUtils_DevicesNamesExample.swift; sourceTree = "<group>"; };
 		F3E41BC924EDF99D00C30752 /* PreviewUtils_ScreenPreviewHelperExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewUtils_ScreenPreviewHelperExample.swift; sourceTree = "<group>"; };
+		F3E41BCB24EE008D00C30752 /* AppStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStore.swift; sourceTree = "<group>"; };
+		F3E41BD824EE03F600C30752 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		F3E41BDB24EE070200C30752 /* GalaxiesState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalaxiesState.swift; sourceTree = "<group>"; };
+		F3E41BDF24EE089A00C30752 /* Galaxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Galaxy.swift; sourceTree = "<group>"; };
+		F3E41BEE24EF5D3100C30752 /* GalaxyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalaxyService.swift; sourceTree = "<group>"; };
+		F3E41BF224EF682600C30752 /* PreviewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewData.swift; sourceTree = "<group>"; };
+		F3E41BF524F012D900C30752 /* GalaxyServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalaxyServiceError.swift; sourceTree = "<group>"; };
+		F3E41BF924F02A8000C30752 /* GalaxiesState+Middleware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GalaxiesState+Middleware.swift"; sourceTree = "<group>"; };
+		F3E41BFC24F0424300C30752 /* LoggingMiddleware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggingMiddleware.swift; sourceTree = "<group>"; };
+		F3E41BFF24F07CC200C30752 /* GalaxiesState+MiddlewareError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GalaxiesState+MiddlewareError.swift"; sourceTree = "<group>"; };
+		F3E41D0224F0BA4D00C30752 /* ReduxDataFlow_SynchronousActionExample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReduxDataFlow_SynchronousActionExample.swift; sourceTree = "<group>"; };
+		F3E41D0324F0BA4D00C30752 /* ReduxDataFlowExamples.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReduxDataFlowExamples.swift; sourceTree = "<group>"; };
+		F3E41D0424F0BA4D00C30752 /* ReduxDataFlow_AsyncSideEffectExample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReduxDataFlow_AsyncSideEffectExample.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3E41D0D24F0BB8200C30752 /* CypherPoetReduxUtils in Frameworks */,
 				F3E41BC624EDF83400C30752 /* CypherPoetSwiftUIKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -47,6 +93,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3E41D0F24F0BB8F00C30752 /* CypherPoetReduxUtils in Frameworks */,
+				F3E41CF124F0A9E800C30752 /* CypherPoetSwiftUIKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,9 +116,13 @@
 		F3E41B9924EDEFF100C30752 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				F3E41BBE24EDF21200C30752 /* Resources */,
+				F3E41B9A24EDEFF100C30752 /* ExamplesApp.swift */,
 				F3E41BBD24EDF20C00C30752 /* App */,
+				F3E41BD624EE03EC00C30752 /* Data */,
+				F3E41BF124EF681600C30752 /* Preview Content */,
+				F3E41BBE24EDF21200C30752 /* Resources */,
 				F3E41BBC24EDF04C00C30752 /* Scene Views */,
+				F3E41BED24EF5D1C00C30752 /* Services */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -104,8 +156,9 @@
 		F3E41BBC24EDF04C00C30752 /* Scene Views */ = {
 			isa = PBXGroup;
 			children = (
-				F3E41BBF24EDF7B600C30752 /* Preview Utils */,
 				F3E41B9B24EDEFF100C30752 /* RootView.swift */,
+				F3E41BBF24EDF7B600C30752 /* Preview Utils */,
+				F3E41D0124F0BA4D00C30752 /* Redux Data Flow Utils */,
 			);
 			path = "Scene Views";
 			sourceTree = "<group>";
@@ -113,7 +166,7 @@
 		F3E41BBD24EDF20C00C30752 /* App */ = {
 			isa = PBXGroup;
 			children = (
-				F3E41B9A24EDEFF100C30752 /* ExamplesApp.swift */,
+				F3E41BCB24EE008D00C30752 /* AppStore.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -143,6 +196,70 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		F3E41BD624EE03EC00C30752 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				F3E41BDE24EE088B00C30752 /* Models */,
+				F3E41BD724EE03EF00C30752 /* State */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		F3E41BD724EE03EF00C30752 /* State */ = {
+			isa = PBXGroup;
+			children = (
+				F3E41BD824EE03F600C30752 /* AppState.swift */,
+				F3E41BFC24F0424300C30752 /* LoggingMiddleware.swift */,
+				F3E41BF824F02A7300C30752 /* Galaxies */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
+		F3E41BDE24EE088B00C30752 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F3E41BDF24EE089A00C30752 /* Galaxy.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F3E41BED24EF5D1C00C30752 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F3E41BEE24EF5D3100C30752 /* GalaxyService.swift */,
+				F3E41BF524F012D900C30752 /* GalaxyServiceError.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		F3E41BF124EF681600C30752 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F3E41BF224EF682600C30752 /* PreviewData.swift */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F3E41BF824F02A7300C30752 /* Galaxies */ = {
+			isa = PBXGroup;
+			children = (
+				F3E41BDB24EE070200C30752 /* GalaxiesState.swift */,
+				F3E41BF924F02A8000C30752 /* GalaxiesState+Middleware.swift */,
+				F3E41BFF24F07CC200C30752 /* GalaxiesState+MiddlewareError.swift */,
+			);
+			path = Galaxies;
+			sourceTree = "<group>";
+		};
+		F3E41D0124F0BA4D00C30752 /* Redux Data Flow Utils */ = {
+			isa = PBXGroup;
+			children = (
+				F3E41D0424F0BA4D00C30752 /* ReduxDataFlow_AsyncSideEffectExample.swift */,
+				F3E41D0224F0BA4D00C30752 /* ReduxDataFlow_SynchronousActionExample.swift */,
+				F3E41D0324F0BA4D00C30752 /* ReduxDataFlowExamples.swift */,
+			);
+			path = "Redux Data Flow Utils";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -161,6 +278,7 @@
 			name = "Examples (iOS)";
 			packageProductDependencies = (
 				F3E41BC524EDF83400C30752 /* CypherPoetSwiftUIKit */,
+				F3E41D0C24F0BB8200C30752 /* CypherPoetReduxUtils */,
 			);
 			productName = "Examples (iOS)";
 			productReference = F3E41BA124EDEFF200C30752 /* Examples.app */;
@@ -179,6 +297,10 @@
 			dependencies = (
 			);
 			name = "Examples (macOS)";
+			packageProductDependencies = (
+				F3E41CF024F0A9E800C30752 /* CypherPoetSwiftUIKit */,
+				F3E41D0E24F0BB8F00C30752 /* CypherPoetReduxUtils */,
+			);
 			productName = "Examples (macOS)";
 			productReference = F3E41BA924EDEFF200C30752 /* Examples.app */;
 			productType = "com.apple.product-type.application";
@@ -210,6 +332,9 @@
 				Base,
 			);
 			mainGroup = F3E41B9424EDEFF100C30752;
+			packageReferences = (
+				F3E41D0B24F0BB8200C30752 /* XCRemoteSwiftPackageReference "CypherPoetReduxUtils" */,
+			);
 			productRefGroup = F3E41BA224EDEFF200C30752 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -246,9 +371,22 @@
 			files = (
 				F3E41BAF24EDEFF200C30752 /* RootView.swift in Sources */,
 				F3E41BAD24EDEFF200C30752 /* ExamplesApp.swift in Sources */,
+				F3E41BE024EE089A00C30752 /* Galaxy.swift in Sources */,
+				F3E41BF624F012D900C30752 /* GalaxyServiceError.swift in Sources */,
+				F3E41BD924EE03F600C30752 /* AppState.swift in Sources */,
+				F3E41D0524F0BA4E00C30752 /* ReduxDataFlow_SynchronousActionExample.swift in Sources */,
+				F3E41BF324EF682600C30752 /* PreviewData.swift in Sources */,
 				F3E41BCA24EDF99D00C30752 /* PreviewUtils_ScreenPreviewHelperExample.swift in Sources */,
+				F3E41D0924F0BA4E00C30752 /* ReduxDataFlow_AsyncSideEffectExample.swift in Sources */,
+				F3E41BEF24EF5D3100C30752 /* GalaxyService.swift in Sources */,
+				F3E41BCC24EE008D00C30752 /* AppStore.swift in Sources */,
 				F3E41BC824EDF96B00C30752 /* PreviewUtils_DevicesNamesExample.swift in Sources */,
 				F3E41BC324EDF80600C30752 /* PreviewUtilsExamples.swift in Sources */,
+				F3E41BFD24F0424300C30752 /* LoggingMiddleware.swift in Sources */,
+				F3E41D0724F0BA4E00C30752 /* ReduxDataFlowExamples.swift in Sources */,
+				F3E41C0024F07CC200C30752 /* GalaxiesState+MiddlewareError.swift in Sources */,
+				F3E41BDC24EE070200C30752 /* GalaxiesState.swift in Sources */,
+				F3E41BFA24F02A8000C30752 /* GalaxiesState+Middleware.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,8 +394,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3E41BCF24EE031C00C30752 /* AppStore.swift in Sources */,
 				F3E41BB024EDEFF200C30752 /* RootView.swift in Sources */,
+				F3E41BE124EE089A00C30752 /* Galaxy.swift in Sources */,
+				F3E41BF724F012D900C30752 /* GalaxyServiceError.swift in Sources */,
+				F3E41BDA24EE03F600C30752 /* AppState.swift in Sources */,
+				F3E41D0624F0BA4E00C30752 /* ReduxDataFlow_SynchronousActionExample.swift in Sources */,
+				F3E41BF424EF682600C30752 /* PreviewData.swift in Sources */,
+				F3E41BD224EE032700C30752 /* PreviewUtils_DevicesNamesExample.swift in Sources */,
+				F3E41D0A24F0BA4E00C30752 /* ReduxDataFlow_AsyncSideEffectExample.swift in Sources */,
+				F3E41BF024EF5D3100C30752 /* GalaxyService.swift in Sources */,
+				F3E41BD124EE032700C30752 /* PreviewUtils_ScreenPreviewHelperExample.swift in Sources */,
 				F3E41BAE24EDEFF200C30752 /* ExamplesApp.swift in Sources */,
+				F3E41BD024EE032700C30752 /* PreviewUtilsExamples.swift in Sources */,
+				F3E41BFE24F0424400C30752 /* LoggingMiddleware.swift in Sources */,
+				F3E41D0824F0BA4E00C30752 /* ReduxDataFlowExamples.swift in Sources */,
+				F3E41C0124F07CC200C30752 /* GalaxiesState+MiddlewareError.swift in Sources */,
+				F3E41BDD24EE070200C30752 /* GalaxiesState.swift in Sources */,
+				F3E41BFB24F02A8000C30752 /* GalaxiesState+Middleware.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -426,6 +580,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = QRXXH2RKAG;
@@ -450,6 +605,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = QRXXH2RKAG;
@@ -500,10 +656,35 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		F3E41D0B24F0BB8200C30752 /* XCRemoteSwiftPackageReference "CypherPoetReduxUtils" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/CypherPoet/CypherPoetReduxUtils";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
 		F3E41BC524EDF83400C30752 /* CypherPoetSwiftUIKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = CypherPoetSwiftUIKit;
+		};
+		F3E41CF024F0A9E800C30752 /* CypherPoetSwiftUIKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = CypherPoetSwiftUIKit;
+		};
+		F3E41D0C24F0BB8200C30752 /* CypherPoetReduxUtils */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F3E41D0B24F0BB8200C30752 /* XCRemoteSwiftPackageReference "CypherPoetReduxUtils" */;
+			productName = CypherPoetReduxUtils;
+		};
+		F3E41D0E24F0BB8F00C30752 /* CypherPoetReduxUtils */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F3E41D0B24F0BB8200C30752 /* XCRemoteSwiftPackageReference "CypherPoetReduxUtils" */;
+			productName = CypherPoetReduxUtils;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
