@@ -16,7 +16,6 @@ extension ComponentPreview: View {
             ForEach(ContentSizeCategory.smallestAndLargest, id: \.self) { category in
                 self.component
                     .previewLayout(.sizeThatFits)
-                    .background(Color(UIColor.systemBackground))
                     .colorScheme(scheme)
                     .environment(\.sizeCategory, category)
                     .previewDisplayName(

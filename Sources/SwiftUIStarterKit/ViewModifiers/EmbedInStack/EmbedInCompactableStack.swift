@@ -1,3 +1,5 @@
+#if os(iOS)
+
 import SwiftUI
 
 
@@ -43,3 +45,5 @@ extension EmbedInCompactableStackViewModifier: ViewModifier {
         }
     }
 }
+
+#endif

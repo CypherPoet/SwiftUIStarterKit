@@ -1,3 +1,5 @@
+#if os(iOS)
+
 import SwiftUI
 
 
@@ -21,3 +23,5 @@ extension Group where Content: View {
         )
     }
 }
+
+#endif
