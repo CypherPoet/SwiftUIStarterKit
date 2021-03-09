@@ -20,7 +20,7 @@ extension View {
         where BorderStyle: ShapeStyle
     {
         modifier(
-            RoundedBorder(
+            RoundedBorderViewModifier(
                 content,
                 width: width,
                 cornerRadius: cornerRadius

@@ -12,11 +12,12 @@ extension Group where Content: View {
     ///
     /// Otherwise, content will be embedded in an `HStack`.
     public func embedInCompactableStack(
-        compactableContentSizes: [ContentSizeCategory] = EmbedInCompactableStack.defaultVerticalSizes
+        compactableContentSizes: [ContentSizeCategory] = EmbedInCompactableStackViewModifier.defaultVerticalSizes
     ) -> some View {
-        ModifiedContent(
-            content: self,
-            modifier: EmbedInCompactableStack(compactableContentSizes: compactableContentSizes)
+        modifier(
+            EmbedInCompactableStackViewModifier(
+                compactableContentSizes: compactableContentSizes
+            )
         )
     }
 }

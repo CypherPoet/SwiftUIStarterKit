@@ -9,8 +9,8 @@
 import SwiftUI
 
 
-public struct RoundedBorder<BorderStyle>
-where BorderStyle: ShapeStyle
+struct RoundedBorderViewModifier<BorderStyle>
+    where BorderStyle: ShapeStyle
 {
     public let borderContent: BorderStyle
     public let width: CGFloat
@@ -30,9 +30,9 @@ where BorderStyle: ShapeStyle
 
 
 // MARK: - ViewModifier
-extension RoundedBorder: ViewModifier {
+extension RoundedBorderViewModifier: ViewModifier {
     
-    public func body(content: Content) -> some View {
+    func body(content: Content) -> some View {
         content
             .overlay(
                 RoundedRectangle(cornerRadius: cornerRadius)

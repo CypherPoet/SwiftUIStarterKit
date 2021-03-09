@@ -1,7 +1,7 @@
 import SwiftUI
 
 
-public struct EmbedInCompactableStack {
+public struct EmbedInCompactableStackViewModifier {
     public static let defaultVerticalSizes: [ContentSizeCategory] = [
         .accessibilityLarge,
         .accessibilityExtraLarge,
@@ -24,7 +24,7 @@ public struct EmbedInCompactableStack {
 }
 
 
-extension EmbedInCompactableStack {
+extension EmbedInCompactableStackViewModifier {
     var isVerticallyStacked: Bool {
         horizontalSizeClass == .compact ||
         compactableContentSizes.contains(sizeCategory)
@@ -33,11 +33,13 @@ extension EmbedInCompactableStack {
 
 
 // MARK: - ViewModifier
-extension EmbedInCompactableStack: ViewModifier {
+extension EmbedInCompactableStackViewModifier: ViewModifier {
     
     public func body(content: Content) -> some View {
-        isVerticallyStacked ?
-            AnyView(VStack { content })
-            : AnyView(HStack { content })
+        if isVerticallyStacked {
+            VStack { content }
+        } else {
+            HStack { content }
+        }
     }
 }
