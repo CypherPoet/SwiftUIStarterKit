@@ -1,8 +1,10 @@
 import SwiftUI
 
 
-struct ShapeClipModifier<S: Shape> {
-    var shape: S
+struct ShapeClipModifier<ShapeContent>
+where ShapeContent: Shape
+{
+    var shape: ShapeContent
 }
 
 

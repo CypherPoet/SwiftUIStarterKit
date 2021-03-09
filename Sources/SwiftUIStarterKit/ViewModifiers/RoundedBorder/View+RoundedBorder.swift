@@ -19,7 +19,7 @@ extension View {
     ) -> some View
         where BorderStyle: ShapeStyle
     {
-        self.modifier(
+        modifier(
             RoundedBorder(
                 content,
                 width: width,

@@ -1,6 +1,9 @@
 import Foundation
 
 
+/// Helper for being able to address a `` with a `.indexed` method.
+///
+/// See: https://stackoverflow.com/a/57842608/8859365
 public struct IndexedCollection<Base: RandomAccessCollection>: RandomAccessCollection {
     public typealias Index = Base.Index
     public typealias Element = (index: Index, element: Base.Element)

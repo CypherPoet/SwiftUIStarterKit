@@ -9,7 +9,9 @@
 import SwiftUI
 
 
-public struct RoundedBorder<BorderStyle> where BorderStyle: ShapeStyle {
+public struct RoundedBorder<BorderStyle>
+where BorderStyle: ShapeStyle
+{
     public let borderContent: BorderStyle
     public let width: CGFloat
     public let cornerRadius: CGFloat

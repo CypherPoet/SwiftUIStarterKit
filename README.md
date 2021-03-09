@@ -1,4 +1,4 @@
-# CypherPoetSwiftUIKit
+# SwiftUIStarterKit
 
 <p>
     <img src="https://img.shields.io/badge/Swift-5.1-F06C33.svg" />
@@ -17,24 +17,24 @@ _A collection of personal utilities that I use for building SwiftUI applications
 
 ### Xcode Projects
 
-Select `File` -> `Swift Packages` -> `Add Package Dependency` and enter `https://github.com/CypherPoet/CypherPoetSwiftUIKit`.
+Select `File` -> `Swift Packages` -> `Add Package Dependency` and enter `https://github.com/CypherPoet/SwiftUIStarterKit`.
 
 
 ### Swift Package Manager Projects
 
-You can add `CypherPoetSwiftUIKit` as a dependency in your `Package.swift` file:
+You can add `SwiftUIStarterKit` as a dependency in your `Package.swift` file:
 
 ```swift
 let package = Package(
     //...
     dependencies: [
-        .package(url: "https://github.com/CypherPoet/CypherPoetSwiftUIKit", from: "0.0.49"),
+        .package(url: "https://github.com/CypherPoet/SwiftUIStarterKit", from: "0.0.49"),
     ],
     //...
 )
 ```
 
-Then simply `import CypherPoetSwiftUIKit` wherever you’d like to use it.
+Then simply `import SwiftUIStarterKit` wherever you’d like to use it.
 
 
 ## ⚠️ Disclaimer
@@ -47,7 +47,7 @@ Nonetheless, several people have asked me to open-source it so they can use it a
 let package = Package(
     //...
     dependencies: [
-        .package(url: "https://github.com/CypherPoet/CypherPoetSwiftUIKit", .exact("0.0.49")),
+        .package(url: "https://github.com/CypherPoet/SwiftUIStarterKit", .exact("0.0.49")),
     ],
     //...
 )
