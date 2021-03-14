@@ -5,6 +5,6 @@ github_url: https://github.com/CypherPoet/SwiftUIStarterKit
 theme: fullwidth
 swift_build_tool: spm
 clean: true
-output: ./docs
+output: docs
 swift_version: 5.3
 min_acl: internal
