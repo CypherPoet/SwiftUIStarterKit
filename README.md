@@ -35,7 +35,7 @@ You can add `SwiftUIStarterKit` as a package dependency in your `Package.swift` 
 let package = Package(
     //...
     dependencies: [
-        .package(url: "https://github.com/CypherPoet/SwiftUIStarterKit", .exact("0.0.52")),
+        .package(url: "https://github.com/CypherPoet/SwiftUIStarterKit", .exact("0.0.53")),
     ],
     //...
 )
