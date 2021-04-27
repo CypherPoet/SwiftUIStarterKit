@@ -1,3 +1,4 @@
+module: SwiftUIStarterKit
 author: CypherPoet
 author_url: https://github.com/CypherPoet
 copyright: Copyright 2021 CypherPoet
@@ -5,5 +6,5 @@ github_url: https://github.com/CypherPoet/SwiftUIStarterKit
 theme: fullwidth
 swift_build_tool: spm
 clean: true
-swift_version: 5.3
+output: ./docs
 min_acl: internal
