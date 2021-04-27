@@ -17,6 +17,13 @@ extension View {
                 Color.clear.preference(key: FrameSizePreferenceKey.self, value: geometry.size)
             }
         )
-        .onPreferenceChange(FrameSizePreferenceKey.self, perform: newSizeHandler)
+        .onPreferenceChange(
+            FrameSizePreferenceKey.self,
+            perform: { newSize in
+                DispatchQueue.main.async {
+                    newSizeHandler(newSize)
+                }
+            }
+        )
     }
 }
