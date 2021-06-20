@@ -37,7 +37,8 @@ let package = Package(
     //...
     dependencies: [
         .package(
-            url: "https://github.com/CypherPoet/SwiftUIStarterKit", .exact("0.0.53")
+            url: "https://github.com/CypherPoet/SwiftUIStarterKit", 
+            .exact("0.0.54")
         ),
     ],
     //...
