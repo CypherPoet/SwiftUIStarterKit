@@ -14,16 +14,18 @@ extension View {
     
     public func roundedBorder<BorderStyle>(
         _ content: BorderStyle,
-        width: CGFloat = 1,
-        cornerRadius: CGFloat = 0
+        lineWidth: Double = 1.0,
+        cornerRadius: Double,
+        appliesClipping: Bool = false
     ) -> some View
         where BorderStyle: ShapeStyle
     {
         modifier(
             RoundedBorderViewModifier(
                 content,
-                width: width,
-                cornerRadius: cornerRadius
+                lineWidth: lineWidth,
+                cornerRadius: cornerRadius,
+                appliesClipping: appliesClipping
             )
         )
     }
