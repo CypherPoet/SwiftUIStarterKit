@@ -12,19 +12,26 @@ import SwiftUI
 struct RoundedBorderViewModifier<BorderStyle>
     where BorderStyle: ShapeStyle
 {
-    public let borderContent: BorderStyle
-    public let width: CGFloat
-    public let cornerRadius: CGFloat
+    let borderContent: BorderStyle
+    let lineWidth: Double
+    let cornerRadius: Double
+    
+    /// Whether or not the content underneath the overlay will be clipped
+    /// with the overlay's `RoundedRectangle` shape.
+    let appliesClipping: Bool
     
     
-    public init(
+    // MARK: - Init
+    init(
         _ borderContent: BorderStyle,
-        width: CGFloat = 1,
-        cornerRadius: CGFloat = 0
+        lineWidth: Double = 1,
+        cornerRadius: Double = 0,
+        appliesClipping: Bool = false
     ) {
         self.borderContent = borderContent
-        self.width = width
+        self.lineWidth = lineWidth
         self.cornerRadius = cornerRadius
+        self.appliesClipping = appliesClipping
     }
 }
 
@@ -33,10 +40,29 @@ struct RoundedBorderViewModifier<BorderStyle>
 extension RoundedBorderViewModifier: ViewModifier {
     
     func body(content: Content) -> some View {
-        content
+        if appliesClipping {
+            baseModifiedContent(for: content)
+                .clipShape(rectangleShape)
+        } else {
+            baseModifiedContent(for: content)
+        }
+    }
+}
+
+
+// MARK: - Computeds
+extension RoundedBorderViewModifier {
+    
+    private var rectangleShape: some Shape {
+        RoundedRectangle(cornerRadius: cornerRadius)
+    }
+    
+    
+    private func baseModifiedContent(for baseContent: Content) -> some View {
+        baseContent
             .overlay(
-                RoundedRectangle(cornerRadius: cornerRadius)
-                    .stroke(borderContent, lineWidth: width)
+                rectangleShape
+                    .stroke(borderContent, lineWidth: lineWidth)
             )
     }
 }

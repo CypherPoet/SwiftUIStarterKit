@@ -1,10 +1,10 @@
-// swift-tools-version:5.4
+// swift-tools-version:5.5
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
 
 let package = Package(
-    name: "SwiftUIStarterKit",
+    name: "CypherPoetSwiftUIStarterKit",
     platforms: [
         .iOS(.v13),
         .macOS(.v10_15),

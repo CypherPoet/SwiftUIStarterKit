@@ -6,9 +6,11 @@
 // ✌️
 //
 
-#if os(iOS)
 
 import SwiftUI
+
+
+#if os(iOS)
 
 
 extension Image {
@@ -46,9 +48,6 @@ extension Image {
 
 
 #elseif os(macOS)
-
-import SwiftUI
-
 
 extension Image {
 
