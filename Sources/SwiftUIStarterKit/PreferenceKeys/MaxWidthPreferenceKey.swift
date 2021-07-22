@@ -20,6 +20,13 @@ extension View {
                     .preference(key: MaxWidthPreferenceKey.self, value: geometry.size.width)
             }
         )
-        .onPreferenceChange(MaxWidthPreferenceKey.self, perform: newWidthHandler)
+        .onPreferenceChange(
+            MaxWidthPreferenceKey.self,
+            perform: { newWidth in
+                DispatchQueue.main.async {
+                    newWidthHandler(newWidth)
+                }
+            }
+        )
     }
 }
