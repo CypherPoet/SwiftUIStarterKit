@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SwiftUIStarterKit - View</title>
+    <link rel="stylesheet" type="text/css" href="./all.css" media="all" />
+</head>
+<body>
+    <header>
+        <a href="./">
+            <strong>
+                SwiftUIStarterKit
+            </strong>
+            <span>Documentation</span>
+        </a>
+    </header>
+
+    <!--
+    <form class="search">
+        <input type="search" placeholder="Search" />
+    </form>
+    -->
+
+    <nav>
+        <div class="wrapper">
+            <h2>On This Page</h2>
+            <ol><li><a href="#methods">Methods</a><ul><li class="function"><a href="#view.depending(onwhether:apply:or:)">depending(on​Whether:​apply:​or:​)</a></li><li class="function"><a href="#view.centered(_:)">centered(_:​)</a></li><li class="function"><a href="#view.roundedborder(_:linewidth:cornerradius:appliesclipping:)">rounded​Border(_:​line​Width:​corner​Radius:​applies​Clipping:​)</a></li><li class="function"><a href="#view.readingmaxwidth(_:)">reading​Max​Width(_:​)</a></li><li class="function"><a href="#view.readingframesize(_:)">reading​Frame​Size(_:​)</a></li></ul></li></ol>
+        </div>
+    </nav>
+
+    <main>
+        <article>
+            <h1>
+    <small>Extensions on</small>
+    <code class="name">View</code>
+</h1>
+    <section id="methods">
+        <h2>Methods</h2>
+
+        <div role="article" class="function" id="view.depending(onwhether:apply:or:)">
+    <h3>
+        <code><a href="#view.depending(onwhether:apply:or:)">depending(on​Whether:​apply:​or:​)</a></code>
+    </h3>
+    <div class="declaration">
+<pre class="highlight"><code><html><body><span class="attribute">@</span><span class="type">ViewBuilder</span>
+    <span class="keyword">public</span> <span class="keyword">func</span> <span class="function">depending</span>&lt;<span class="variable">ModifierIfTrue</span>, <span class="variable">ModifierIfFalse</span>&gt;(
+        <span class="variable">onWhether</span> <span class="variable">condition</span>: <span class="type">Bool</span>,
+        <span class="variable">apply</span> <span class="variable">modifierIfTrue</span>: <span class="type">ModifierIfTrue</span>,
+        <span class="variable">or</span> <span class="variable">modifierIfFalse</span>: <span class="type">ModifierIfFalse</span>
+    ) -&gt; <span class="keyword">some</span> <span class="type">View</span> <span class="keyword">where</span>
+        <span class="type">ModifierIfTrue</span>: <span class="type">ViewModifier</span>,
+        <span class="type">ModifierIfFalse</span>: <span class="type">ViewModifier</span></body></html></code></pre>
+</div>
+<div class="summary" role="doc-abstract">
+    <p>Conditionally applies a modifier to a view, based upon the truthiness of a Boolean.</p>
+
+</div>
+</div>
+<div role="article" class="function" id="view.centered(_:)">
+    <h3>
+        <code><a href="#view.centered(_:)">centered(_:​)</a></code>
+    </h3>
+    <div class="declaration">
+<pre class="highlight"><code><html><body><span class="keyword">public</span> <span class="keyword">func</span> <span class="function">centered</span>(
+        <span class="keyword">_</span> <span class="variable">alignmentKind</span>: <a href="./CenteredViewModifier"><span class="type">CenteredViewModifier</span></a>.<span class="type">AlignmentKind</span>
+    ) -&gt; <span class="keyword">some</span> <span class="type">View</span>  </body></html></code></pre>
+</div>
+</div>
+<div role="article" class="function" id="view.roundedborder(_:linewidth:cornerradius:appliesclipping:)">
+    <h3>
+        <code><a href="#view.roundedborder(_:linewidth:cornerradius:appliesclipping:)">rounded​Border(_:​line​Width:​corner​Radius:​applies​Clipping:​)</a></code>
+    </h3>
+    <div class="declaration">
+<pre class="highlight"><code><html><body><span class="keyword">public</span> <span class="keyword">func</span> <span class="function">roundedBorder</span>&lt;<span class="variable">BorderStyle</span>&gt;(
+        <span class="keyword">_</span> <span class="variable">content</span>: <span class="type">BorderStyle</span>,
+        <span class="variable">lineWidth</span>: <span class="type">Double</span> = <span class="number literal">1.0</span>,
+        <span class="variable">cornerRadius</span>: <span class="type">Double</span>,
+        <span class="variable">appliesClipping</span>: <span class="type">Bool</span> = <span class="keyword">false</span>
+    ) -&gt; <span class="keyword">some</span> <span class="type">View</span>
+        <span class="keyword">where</span> <span class="type">BorderStyle</span>: <span class="type">ShapeStyle</span></body></html></code></pre>
+</div>
+</div>
+<div role="article" class="function" id="view.readingmaxwidth(_:)">
+    <h3>
+        <code><a href="#view.readingmaxwidth(_:)">reading​Max​Width(_:​)</a></code>
+    </h3>
+    <div class="declaration">
+<pre class="highlight"><code><html><body><span class="keyword">public</span> <span class="keyword">func</span> <span class="function">readingMaxWidth</span>(<span class="keyword">_</span> <span class="variable">newWidthHandler</span>: <span class="attribute">@</span><span class="attribute">escaping</span> (<span class="type">CGFloat</span>) -&gt; <span class="type">Void</span>) -&gt; <span class="keyword">some</span> <span class="type">View</span>  </body></html></code></pre>
+</div>
+</div>
+<div role="article" class="function" id="view.readingframesize(_:)">
+    <h3>
+        <code><a href="#view.readingframesize(_:)">reading​Frame​Size(_:​)</a></code>
+    </h3>
+    <div class="declaration">
+<pre class="highlight"><code><html><body><span class="keyword">public</span> <span class="keyword">func</span> <span class="function">readingFrameSize</span>(<span class="keyword">_</span> <span class="variable">newSizeHandler</span>: <span class="attribute">@</span><span class="attribute">escaping</span> (<span class="type">CGSize</span>) -&gt; <span class="type">Void</span>) -&gt; <span class="keyword">some</span> <span class="type">View</span>  </body></html></code></pre>
+</div>
+</div>
+    </section>
+        </article>
+    </main>
+
+    <footer>
+        <p>
+    Generated on <time datetime="2021-07-22T04:38:17+0000">July 22, 2021</time> using <a href="https://github.com/SwiftDocOrg/swift-doc">swift-doc</a> <span class="version">1.0.0-rc.1</span>.
+</p>
+    </footer>
+</body>
+</html>
